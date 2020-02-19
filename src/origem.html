@@ -6,10 +6,18 @@
     <title>Origem CSS: Externo, Interno e Inline</title>
     <style>
         /* ... */
+        body {
+            background-color:#222;
+            color: #fff;
+        }
+
     </style>
+    <!-- A prioridade do CSS é definida pela ordem de processamento-->
+    <link rel="stylesheet" href="/src/css/externo.css">
 </head>
 
-<body>
+<body style="
+background-color:coral;"> <!-- Não é recomendado colocar estilos inline-->
     <h1>E agora?</h1>
 </body>
 
