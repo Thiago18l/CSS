@@ -6,6 +6,27 @@
     <title>Display</title>
     <style>
         /* ... */
+        body {
+            font-size: 40px;
+            color: #fff;
+            background-color: #222;
+        }
+        ul { padding: 0 }
+        div { background-color: #888; }
+        span { background-color: dodgerblue;}
+        li { background-color: purple;}
+        /* Tudo que for aqui dentro vai ser aplicado para div, span e li */
+        div, span, li {
+            width: 50%;
+            width: 200px;
+            height: 80px;
+            padding-top: 30px;
+            text-align: center;
+            display: block; /* cada elemento vai ter sua propria linha */
+            display: inline; /* vão ficar na mesma linha, com display inline não da pra aumentar a largura ou definir a altura de um componente... */
+            display: inline-block; /* 
+            ele leva em consideração a altura e a largura do elemento */
+        }
     </style>
 </head>
 
