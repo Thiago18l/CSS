@@ -6,6 +6,56 @@
     <title>Position</title>
     <style>
         /* ... */
+        div {
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #222;
+        }
+        .static {
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+        }
+        .fixed {
+            position: fixed; /* O elemento marcado com fixed vai se comportar fixado na pagina */
+            bottom: 30px;
+            right: 0px;
+            background-color: tomato;
+        }
+        .relative1 {
+            position: relative; /* sempre relativo ao elemento anterior */
+            left: 50px;
+            top: 5px;
+            background-color: aquamarine;
+        }
+        .absolute1 {
+            position: absolute; /* Pode Sobrepor outros elementos */
+            left: 350px;
+            top:120px;
+            background-color: pink;
+        }
+        .relative2 {
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategray;
+        }
+        .absolute2 {
+            position: absolute; /* Vai ficar absoluto referente a div que ele pertence... */
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+        }
+        .sticky {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            background-color: #777;
+            top: 0px; /* vai ficar grudado */
+        }
     </style>
 </head>
 
