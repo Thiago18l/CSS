@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="css/tag.css">
     <style>
         /* ... */
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+        .big {
+            font-size: 1.5em;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;  /* coloca do lado direito com o 1 começando da esquerda. */
+            flex-direction: row; /* propriedade padrão do flex */
+            width: 50%;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse; /* Inverte o conteudo */
+            flex-flow: row wrap;
+            height: 200px;
+            flex-flow: column-reverse wrap;
+            flex-flow: row wrap;
+            justify-content: flex-start; /*  */
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
